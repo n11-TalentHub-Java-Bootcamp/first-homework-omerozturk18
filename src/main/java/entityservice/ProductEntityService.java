@@ -24,20 +24,20 @@ public class ProductEntityService {
         return productDao.findById(id);
     }
 
-    public List<Product> findAllProductListByPriceGeAndPriceLe(BigDecimal fiyatGe, BigDecimal fiyatLe){
-        return productDao.findAllProductListByPriceGeAndPriceLe(fiyatGe, fiyatLe);
+    public List<Product> findAllProductListByPriceGeAndPriceLe(BigDecimal priceGe, BigDecimal priceLe){
+        return productDao.findAllProductListByPriceGeAndPriceLe(priceGe, priceLe);
     }
 
-    public List<Product> findAllProductListByPriceBetween(BigDecimal fiyatGe, BigDecimal fiyatLe){
-        return productDao.findAllProductListByPriceBetween(fiyatGe, fiyatLe);
+    public List<Product> findAllProductListByPriceBetween(BigDecimal priceGe, BigDecimal priceLe){
+        return productDao.findAllProductListByPriceBetween(priceGe, priceLe);
     }
 
-    public List<Product> findAllProductByCategoryBreaking(Long kirilim){
-        return productDao.findAllProductByCategoryBreaking(kirilim);
+    public List<Product> findAllProductByCategoryBreaking(Long breaking){
+        return productDao.findAllProductByCategoryBreaking(breaking);
     }
 
-    public List<ProductDetailDto> findAllProductDetailDtoByCategoryBreaking(Long kirilim) {
-        return productDao.findAllProductDetailDtoByCategoryBreaking(kirilim);
+    public List<ProductDetailDto> findAllProductDetailDtoByCategoryBreaking(Long breaking) {
+        return productDao.findAllProductDetailDtoByCategoryBreaking(breaking);
     }
 
     public List<CountOfProductCommentsDto> findAllCountOfProductComments() {
